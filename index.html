@@ -11,10 +11,30 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" type="image/x-icon" href="images/network-chart-regular-24.png">
 	<script src="assets/aos_2.3.1/dist/aos.css"></script>
+	<script>
+		document.onkeydown = function (e) {
+			if (event.keyCode == 123) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+				return false;
+			}
+			if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+				return false;
+			}
+		}
+	</script>
 </head>
 
-<body class="is-preload">
+<body class="is-preload" oncontextmenu="return false">
 
 	<!-- Header -->
 	<div id="header">
@@ -52,12 +72,11 @@
 
 			<!-- Social Icons -->
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-				
+				<li><a href="https://github.com/KiranSongire" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="mailto:songirek21@gmail.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+
 			</ul>
 
 		</div>
@@ -68,19 +87,22 @@
 	<div id="main">
 
 		<!-- Intro -->
-		<section id="top" class="one dark cover">
-			<div class="container">
+		<section id="particles-js" class="one dark cover">
+			<div class="container name-section">
 
 				<header>
-					<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a>
-						responsive<br />
-						site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-					<p>Ligula scelerisque justo sem accumsan diam quis<br />
-						vitae natoque dictum sollicitudin elementum.</p>
+					<h2 class="alt">Hi! I'm <strong>Kiran Songire</strong>
+						<p>
+							I'm
+							<span class="typewrite" data-period="2000"
+								data-type='["Data Scientist ", "Student ", "Explorer ", "Data Analyst ", "Learning something new "]'>
+								<span class="wrap"></span>
+							</span>
+						</p>
 				</header>
 
 				<footer>
-					<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+					<a href="#portfolio" class="button scrolly">Portfolio</a>
 				</footer>
 
 			</div>
@@ -94,51 +116,55 @@
 					<h2>Portfolio</h2>
 				</header>
 
-				<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-					fusce hendrerit lacus ridiculus.</p>
+				<p>Building a data-driven world, one pipeline at a time - showcasing my journey as a Data Engineer.</p>
 
 				<div class="row">
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+							<a target="_blank" href="https://github.com/KiranSongire/Netflix" class="image fit"><img
+									src="images/Netflix Tableu Analysis.jfif" alt="" /></a>
 							<header>
-								<h3>Ipsum Feugiat</h3>
+								<h3>Netflix Tableu Analysis</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+							<a target="_blank" href="https://github.com/KiranSongire/Neural-Network-NYC-taxi-Driver"
+								class="image fit"><img src="images/Neural-Network-NYC-taxi-Driver.jfif" alt="" /></a>
 							<header>
-								<h3>Rhoncus Semper</h3>
-							</header>
-						</article>
-					</div>
-					<div class="col-4 col-12-mobile">
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3>Magna Nullam</h3>
-							</header>
-						</article>
-						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3>Natoque Vitae</h3>
+								<h3>
+									Neural-Network-NYC-taxi-Driver</h3>
 							</header>
 						</article>
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+							<a target="_blank" href="https://github.com/KiranSongire/CorporateSQL_Complete" class="image fit"><img
+									src="images/Corporate SQL.jfif" alt="" /></a>
 							<header>
-								<h3>Dolor Penatibus</h3>
+								<h3>Corporate SQL</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+							<a target="_blank" href="https://github.com/KiranSongire/Temperature_device_failure" class="image fit"><img
+									src="images/Anomaly Detection Task.jfif" alt="" /></a>
 							<header>
-								<h3>Orci Convallis</h3>
+								<h3>Anomaly Detection Task</h3>
+							</header>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a target="_blank" href="https://github.com/KiranSongire/StockMarketML" class="image fit"><img
+									src="images/stock-market-ml.jfif" alt="" /></a>
+							<header>
+								<h3>Stock Market ML</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a target="_blank" href="https://github.com/KiranSongire/ImageRecognitionclassifierCNNS-PetImages-"
+								class="image fit"><img src="images/image-recognition.jfif" alt="" /></a>
+							<header>
+								<h3>Image Recognition</h3>
 							</header>
 						</article>
 					</div>
@@ -155,14 +181,21 @@
 					<h2>About Me</h2>
 				</header>
 
-				<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+				<a href="#" class="image featured"><img src="images/banner-02.jpg" alt="" /></a>
 
-				<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-					ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-					laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-					parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-					dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-					ornare iaculis.</p>
+				<p>I am a passionate and dedicated student with a Master of Science (MS) in Data Science from Pace
+					University. With a strong foundation in computer engineering, I possess a comprehensive skill set in
+					programming languages such as Python, SQL, Opencv, ML, NLP, and Tableau visualization, along with
+					expertise in data manipulation, machine learning algorithms, statistical analysis, and database
+					management. During their tenure as a Software Analyst/Data Analyst at Adrosonic, I developed and
+					maintained iOS applications, implemented data analytics to optimize the shopping experience, and
+					conducted performance analysis to increase productivity. Their experience also includes UI/UX design
+					for various applications. I have successfully completed academic projects that demonstrate my
+					proficiency in graph databases, trading strategies, exploratory data analysis, and classification
+					using machine learning models. Additionally, they have obtained certifications in data wrangling
+					using SQL, Tableau, and Python. With a strong analytical mindset, exceptional problem-solving
+					abilities, and a drive for continuous learning, I am well-equipped to contribute to data-driven
+					initiatives and make valuable insights through compelling narratives and predictive models.</p>
 
 			</div>
 		</section>
@@ -175,12 +208,10 @@
 					<h2>Contact</h2>
 				</header>
 
-				<p>Elementum sem parturient nulla quam placerat viverra
-					mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-					donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-					orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+				<p>Feel free to drop me a message.</p>
 
-				<form method="post" action="#">
+				<!-- <form method="post" action="mailto:songirek21@gmail.com"> -->
+				<form method="post" action="mailto:akshaysen.sen75@gmail.com">
 					<div class="row">
 						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -202,10 +233,10 @@
 	<div id="footer">
 
 		<!-- Copyright -->
-		<ul class="copyright">
+		<!-- <ul class="copyright">
 			<li>&copy; Untitled. All rights reserved.</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
+		</ul> -->
 
 	</div>
 
@@ -222,6 +253,10 @@
 	<script src="assets/npm/popper_js_1.16.0/dist/umd/popper.min.js"></script>
 	<script src="assets/js/waypoint/lib/jquery.waypoints.min.js"></script>
 	<script src="assets/js/main-anime.js"></script>
+	<script src="assets/particles.js-master/particles.js">
+	</script>
+	<script src="assets/particles.js-master/demo/js/app.js">
+	</script>
 </body>
 
 </html>
